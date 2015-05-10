@@ -195,7 +195,7 @@ Transform:
   m_GameObject: {fileID: 981455421}
   m_LocalRotation: {x: 0, y: -.121869348, z: 0, w: .992546141}
   m_LocalPosition: {x: 0, y: 2, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.31059146, y: 2.31059098, z: 2.31059098}
   m_Children: []
   m_Father: {fileID: 1591336287}
   m_RootOrder: 3
@@ -208,8 +208,8 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 1620115426
-  m_Size: 1.61000001
+    rgba: 1375701961
+  m_Size: 1.76999998
 --- !u!1 &997063647
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,7 +507,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9816ca2da7123454b8c9847787236c3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  launchPoint: {fileID: 0}
+  prefabProjectile: {fileID: 183520, guid: 54b058960f75ffa4791d25c3b1bc30ac, type: 2}
+  velocityMult: 10
 --- !u!135 &1591336289
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -515,7 +516,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1591336286}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1.38
@@ -574,7 +575,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1699973629}
-  m_LocalRotation: {x: .36361751, y: .130087748, z: .288675308, w: .876085699}
+  m_LocalRotation: {x: .545566261, y: .0641447231, z: .310067862, w: .775951624}
   m_LocalPosition: {x: -10, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
