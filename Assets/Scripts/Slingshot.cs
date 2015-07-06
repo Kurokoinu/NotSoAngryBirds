@@ -6,7 +6,7 @@ public class Slingshot : MonoBehaviour {
 
 	//Inspector fields
 	public GameObject prefabProjectile;
-	public float velocityMult;
+	public float velocityMult = 0.03f;
 
 
 	//Internal fields
@@ -18,16 +18,18 @@ public class Slingshot : MonoBehaviour {
 
 
 	void Awake() {
-		Transform launchPointTrans = transform.Find ("LaunchPoint");
+		Transform launchPointTrans = transform.FindChild ("LaunchPoint");
 		launchPoint = launchPointTrans.gameObject;
 		launchPoint.SetActive(false);
-		launchPos = launchPoint.transform.position;
+		launchPos = launchPointTrans.position;
 	}
+
 
 	void OnMouseEnter() {
 		print ("Yo!");
 		launchPoint.SetActive(true);
 	}
+
 
 	void OnMouseExit() {
 		print ("no!");
@@ -36,6 +38,7 @@ public class Slingshot : MonoBehaviour {
 
 
 	}
+
 
 	void OnMouseDown(){
 		//set aim to aiminng modeee!
@@ -50,6 +53,7 @@ public class Slingshot : MonoBehaviour {
 		//disable physics
 		projectile.GetComponent<Rigidbody>().isKinematic = true;
 	}
+
 
 	void Update(){
 		//check aiming mode
@@ -78,9 +82,12 @@ public class Slingshot : MonoBehaviour {
 			projectile.GetComponent<Rigidbody>().velocity = -mouseDelta * velocityMult;
 			FollowCamera.s.poi = projectile;
 
-		}
-		  //fire it OFF
+			projectile = null;
 
+			//fire it OFF
+			GameController.ShotFired();
+
+		}
 
 	}
 }

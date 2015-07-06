@@ -2,43 +2,64 @@
 using System.Collections;
 
 public class FollowCamera : MonoBehaviour {
+	
+	public static FollowCamera s;				//singleton instance of this class -> access: FollowCamera.s.poi;
+		
+	public GameObject poi; 					    //point of interest	
+	public float easing = 0.03f;
+	public Vector2 minXY;
 
 	private float camZ;
-
-	public static FollowCamera s;				//singleton instance of this class -> access: FollowCamera.s.poi;
-	public GameObject poi; 					    //point of interest
-	public float easing;
 	
-	Vector2 minXY;
 
 
 	void Awake(){
-
+		
 		s = this;
 		camZ = transform.position.z;
-
+		
 	}
 
-	void Update(){
-
+	
+	void FixedUpdate(){
+		
+		Vector3 destination;
+		
 		if(poi == null){						//check if the poi is active
-			return;
-
-
+			destination = Vector3.zero;			//set time destionation to the zero-vector (default point of interest(slingshot)
 		}
-
-		Vector3 destination = Vector3.Lerp(transform.position, poi.transform.position, easing);
-		//destination = Vector3.Lerp(transform.position, poi.transform.position;, easing); //5% in direction of destination
-
+		
+		else{
+			
+			
+			//get its position
+			destination = poi.transform.position;
+			
+			//check if poi is a projectile
+			// check if it is resting(sleeping)
+			//set it to "null" as default value in next update
+			
+			if(poi.tag == "projectile"){
+				if(poi.GetComponent<Rigidbody>().IsSleeping()){
+					poi = null;
+					return;
+					
+				}
+			}
+		}
+		
+		
 		destination.x = Mathf.Max(minXY.x, destination.x);
 		destination.y = Mathf.Max(minXY.y, destination.y);
-
+		
+		destination = Vector3.Lerp(transform.position, destination, easing);
+		
 		destination.z = camZ;
 		transform.position = destination;
-
+		
 		this.GetComponent<Camera>().orthographicSize = destination.y + 10;
-
-
+		
 	}
+	
 
 }
