@@ -10,9 +10,12 @@ public class ProjectileTail : MonoBehaviour {
 	public float minDist = 0.1f;
 
 	//Internal fields
+	public List <LineRenderer> lines = new List <LineRenderer>();
+
+
 	private LineRenderer line;
 	private int pointCount;
-	private GameObject _poi;
+	public GameObject _poi;
 	private Vector3 lastPoint;
 
 	//a property: looks to the outside like a field but calls get/set internally
@@ -23,6 +26,7 @@ public class ProjectileTail : MonoBehaviour {
 		S = this;				//S contains the Object "ProcettaiL" in the hierarchy
 
 		line = this.GetComponent<LineRenderer>();
+
 		pointCount = 0;
 
 		//----------new line material --> can be changed in the parameters----------------
@@ -90,6 +94,8 @@ public class ProjectileTail : MonoBehaviour {
 			line.enabled = true;
 
 		}
+
+
 		else{
 			// else, not the first point
 			pointCount++;
@@ -119,7 +125,7 @@ public class ProjectileTail : MonoBehaviour {
 			if(_poi != null){
 				line.enabled = false;
 				pointCount = 0;
-				line.SetVertexCount(0); 			//reset the line renderer
+				line.SetVertexCount(3); 			//reset the line renderer
 			}
 		}	
 	}

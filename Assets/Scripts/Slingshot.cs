@@ -44,6 +44,8 @@ public class Slingshot : MonoBehaviour {
 		//set aim to aiminng modeee!
 		aimingMode = true;
 
+		//if(counter <= 2) counter ++; else counter=0; for multiply array maybe with array and 3 projectiles?
+
 		//instantiate project tile
 		projectile = Instantiate(prefabProjectile) as GameObject;
 
