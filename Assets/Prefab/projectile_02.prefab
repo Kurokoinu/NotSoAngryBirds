@@ -13,7 +13,7 @@ GameObject:
   - 23: {fileID: 2366066}
   - 54: {fileID: 5495886}
   m_Layer: 0
-  m_Name: projectile
+  m_Name: projectile_02
   m_TagString: projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: b8f13b41fc94edd4e811266d65872538, type: 2}
+  - {fileID: 2100000, guid: 34dde6afdf984a64880232f0988e6349, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1

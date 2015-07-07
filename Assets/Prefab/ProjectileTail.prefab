@@ -41,6 +41,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minDist: .100000001
+  lines: []
+  _poi: {fileID: 0}
 --- !u!120 &12054314
 LineRenderer:
   m_ObjectHideFlags: 1
