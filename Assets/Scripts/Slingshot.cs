@@ -19,6 +19,7 @@ public class Slingshot : MonoBehaviour {
 	//boolean
 	public bool ball01 = true;
 	public bool ball02 = false;
+	public bool ball03 = false;
 	
 	
 	void Awake() {
@@ -60,6 +61,13 @@ public class Slingshot : MonoBehaviour {
 			//instantiate project tile
 			projectile = Instantiate(prefabProjectile[1]) as GameObject;
 			Debug.Log("ball2" + ball02);
+			
+		}
+
+		if(ball03 == true){
+			
+			//instantiate project tile
+			projectile = Instantiate(prefabProjectile[2]) as GameObject;
 			
 		}
 			
@@ -113,6 +121,7 @@ public class Slingshot : MonoBehaviour {
 
 		ball01 = true;
 		ball02 = false;
+		ball03 = false;
 	}
 
 	
@@ -120,5 +129,13 @@ public class Slingshot : MonoBehaviour {
 		
 		ball01 = false;
 		ball02 = true;
+		ball03 = false;
+	}
+
+	public void ToogleBalls03(){
+		
+		ball01 = false;
+		ball02 = false;
+		ball03 = true;
 	}
 }
