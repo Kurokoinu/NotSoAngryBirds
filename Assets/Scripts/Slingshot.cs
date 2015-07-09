@@ -16,7 +16,7 @@ public class Slingshot : MonoBehaviour {
 	private Vector3 launchPos;
 	private GameObject projectile;
 
-	//boolean
+	//boolean for different balls
 	public bool ball01 = true;
 	public bool ball02 = false;
 	public bool ball03 = false;

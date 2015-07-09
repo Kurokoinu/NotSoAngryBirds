@@ -28,7 +28,8 @@ public class GameController : MonoBehaviour {
 	private GameState state = GameState.idle;
 	private string showing = "Slingshot";
 
-
+	private int maxShots;
+	
 
 	void Start() {
 		s = this;
@@ -85,17 +86,21 @@ public class GameController : MonoBehaviour {
 
 	void Update(){
 
+		
+		SetShotMax();
+		CheckGameOver();
+
 		UpdateGUI();
 
 		if(state == GameState.playing && Goal.goalMet) {
-			if(FollowCamera.s.poi.tag == "projectile" && FollowCamera.s.poi.GetComponent<Rigidbody>().IsSleeping()) {
+			if(FollowCamera.s.poi.tag == "projectile") {
 
 				state = GameState.levelend;
 
 				SwitchView("Both");
 
 				//next level start
-				Invoke ("NextLevel", 3f);
+				Invoke ("NextLevel", 2f);
 
 			}
 		}
@@ -137,5 +142,42 @@ public class GameController : MonoBehaviour {
 
 	public static void ShotFired(){
 		s.shotsTaken++;
+	}
+
+	void SetShotMax(){
+
+		
+		if (level == 0){
+			maxShots = 5;
+			
+		}
+		
+		if (level == 1){
+			maxShots = 10;
+			
+		}
+		
+		if (level == 2){
+			maxShots = 15;
+			
+		}
+	}
+
+	void CheckGameOver(){
+
+		if (level == 0 && shotsTaken >= maxShots){
+			Application.LoadLevel ("GameOver");
+
+		}
+
+		if (level == 1 && shotsTaken >= maxShots){
+			Application.LoadLevel ("GameOver");
+			
+		}
+
+		if (level == 2 && shotsTaken >= maxShots){
+			Application.LoadLevel ("GameOver");
+			
+		}
 	}
 }

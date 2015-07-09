@@ -13,6 +13,7 @@ public class FollowCamera : MonoBehaviour {
 	
 
 
+
 	void Awake(){
 		
 		s = this;
