@@ -141,48 +141,6 @@ SpriteRenderer:
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 34ece09f60002b545b4ae8352cbf3f11, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!1001 &95704366
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 481462, guid: c599ed20696716a4da53aa244f76b352, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 56.0384674
-      objectReference: {fileID: 0}
-    - target: {fileID: 481462, guid: c599ed20696716a4da53aa244f76b352, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -3.6894033
-      objectReference: {fileID: 0}
-    - target: {fileID: 481462, guid: c599ed20696716a4da53aa244f76b352, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -1.86092091
-      objectReference: {fileID: 0}
-    - target: {fileID: 481462, guid: c599ed20696716a4da53aa244f76b352, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 481462, guid: c599ed20696716a4da53aa244f76b352, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 481462, guid: c599ed20696716a4da53aa244f76b352, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 481462, guid: c599ed20696716a4da53aa244f76b352, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 481462, guid: c599ed20696716a4da53aa244f76b352, type: 2}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: c599ed20696716a4da53aa244f76b352, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &126305677
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,12 +291,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   castles:
-  - {fileID: 161606, guid: c599ed20696716a4da53aa244f76b352, type: 2}
-  - {fileID: 177344, guid: ae384b0d6b4d03e4fb942fc45447fb4a, type: 2}
-  - {fileID: 156706, guid: a7bf3d318547e0042904d1311591a462, type: 2}
+  - {fileID: 185994, guid: c599ed20696716a4da53aa244f76b352, type: 2}
+  - {fileID: 199638, guid: ae384b0d6b4d03e4fb942fc45447fb4a, type: 2}
+  - {fileID: 185530, guid: a7bf3d318547e0042904d1311591a462, type: 2}
   guiTextLvl: {fileID: 256241377}
   guiTextScore: {fileID: 351214530}
-  castlePose: {x: 50, y: 10, z: 0}
+  castlePose: {x: 50, y: -4, z: 0}
+  sling: {fileID: 1591336286}
+  slingscript: {fileID: 1591336288}
+  FollowCam: {fileID: 749644472}
+  follocam: {fileID: 749644478}
 --- !u!224 &188390317
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1234,6 +1196,7 @@ MonoBehaviour:
   poi: {fileID: 0}
   easing: .0500000007
   minXY: {x: 0, y: 0}
+  isResting: 0
 --- !u!114 &749644479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2153,6 +2116,7 @@ MonoBehaviour:
   - {fileID: 183520, guid: 54b058960f75ffa4791d25c3b1bc30ac, type: 2}
   - {fileID: 183520, guid: cbad25562384fd44b97f57bb6097f332, type: 2}
   velocityMult: 20
+  gameover: 0
   ball01: 1
   ball02: 0
   ball03: 0

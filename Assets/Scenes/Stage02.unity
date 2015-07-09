@@ -291,10 +291,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   castles:
-  - {fileID: 168584, guid: 747c20b834b9e1f4893a926ed211ba4f, type: 2}
+  - {fileID: 146664, guid: 1a5c421800a6293418e9545d60d132c0, type: 2}
+  - {fileID: 174006, guid: 68afa39583986644ab92556e63b5fd9b, type: 2}
+  - {fileID: 104318, guid: 5388222ec57c05f46af70fc6fe12255d, type: 2}
   guiTextLvl: {fileID: 256241377}
   guiTextScore: {fileID: 351214530}
   castlePose: {x: 60, y: -10, z: 50}
+  sling: {fileID: 1591336286}
+  slingscript: {fileID: 1591336288}
+  FollowCam: {fileID: 749644472}
+  follocam: {fileID: 749644478}
 --- !u!224 &188390317
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1201,7 +1207,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 407204, guid: 64e85aa1d21ba5e42a820249b9a17909, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 64e85aa1d21ba5e42a820249b9a17909, type: 2}
@@ -1372,6 +1378,7 @@ MonoBehaviour:
   poi: {fileID: 0}
   easing: .0500000007
   minXY: {x: 0, y: 0}
+  isResting: 0
 --- !u!114 &749644479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2291,6 +2298,7 @@ MonoBehaviour:
   - {fileID: 183520, guid: 54b058960f75ffa4791d25c3b1bc30ac, type: 2}
   - {fileID: 183520, guid: cbad25562384fd44b97f57bb6097f332, type: 2}
   velocityMult: 20
+  gameover: 0
   ball01: 1
   ball02: 0
   ball03: 0

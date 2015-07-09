@@ -29,9 +29,17 @@ public class GameController : MonoBehaviour {
 	private string showing = "Slingshot";
 
 	private int maxShots;
-	
+
+	public GameObject sling;
+	public Slingshot slingscript;
+
+	public GameObject FollowCam;
+	public FollowCamera follocam;
+
 
 	void Start() {
+
+
 		s = this;
 
 		//initiate stuff (lvl max,lvl...)
@@ -86,7 +94,13 @@ public class GameController : MonoBehaviour {
 
 	void Update(){
 
-		
+		slingscript.gameover = false;
+
+		if(shotsTaken >= maxShots){
+
+			slingscript.gameover = true;
+		}
+
 		SetShotMax();
 		CheckGameOver();
 
@@ -148,7 +162,7 @@ public class GameController : MonoBehaviour {
 
 		
 		if (level == 0){
-			maxShots = 5;
+			maxShots = 10;
 			
 		}
 		
@@ -165,7 +179,7 @@ public class GameController : MonoBehaviour {
 
 	void CheckGameOver(){
 
-		if (level == 0 && shotsTaken >= maxShots){
+		if (level == 0 && slingscript.gameover == true && follocam.isResting == true){
 			Application.LoadLevel ("GameOver");
 
 		}

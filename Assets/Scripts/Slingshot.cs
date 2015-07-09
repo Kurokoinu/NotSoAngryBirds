@@ -7,6 +7,8 @@ public class Slingshot : MonoBehaviour {
 	//Inspector fields
 	public GameObject[] prefabProjectile;
 	public float velocityMult = 0.03f;
+
+	public bool gameover = false;
 	
 	
 	//Internal fields
@@ -33,6 +35,7 @@ public class Slingshot : MonoBehaviour {
 	void OnMouseEnter() {
 		print ("Yo!");
 		launchPoint.SetActive(true);
+		
 	}
 	
 	
@@ -47,8 +50,10 @@ public class Slingshot : MonoBehaviour {
 	
 	void OnMouseDown(){
 		//set aim to aiminng modeee!
+
 		aimingMode = true;
 
+		if(gameover == false){
 		if(ball01 == true){
 			
 			//instantiate project tile
@@ -78,14 +83,16 @@ public class Slingshot : MonoBehaviour {
 			projectile.GetComponent<Rigidbody>().isKinematic = true;
 		}
 
-		
-		
+
+	}
 	
 	
 	void Update(){
+
+		Debug.Log(gameover + "gameover");
 		//check aiming mode
 		if (!aimingMode) return;
-		
+
 		//mouse pos 3D space
 		Vector3 mousePos2D = Input.mousePosition;
 		mousePos2D.z = -Camera.main.transform.position.z;
@@ -97,7 +104,8 @@ public class Slingshot : MonoBehaviour {
 		//constrain the delta to radius of the sphere collider
 		float maxMagnitude = this.GetComponent<SphereCollider>().radius;
 		mouseDelta = Vector3.ClampMagnitude(mouseDelta, maxMagnitude);
-		
+
+		if(gameover == false){
 		//set projectile to new pos
 		projectile.transform.position = launchPos + mouseDelta;
 		
@@ -112,7 +120,7 @@ public class Slingshot : MonoBehaviour {
 			
 			//fire it OFF
 			GameController.ShotFired();
-			
+			}
 		}
 		
 	}

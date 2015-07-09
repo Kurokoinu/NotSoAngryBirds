@@ -295,6 +295,10 @@ MonoBehaviour:
   guiTextLvl: {fileID: 256241377}
   guiTextScore: {fileID: 351214530}
   castlePose: {x: 60, y: -10, z: 50}
+  sling: {fileID: 0}
+  slingscript: {fileID: 0}
+  FollowCam: {fileID: 0}
+  follocam: {fileID: 0}
 --- !u!224 &188390317
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1449,6 +1453,7 @@ MonoBehaviour:
   poi: {fileID: 0}
   easing: .0500000007
   minXY: {x: 0, y: 0}
+  isResting: 0
 --- !u!114 &749644479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2500,6 +2505,7 @@ MonoBehaviour:
   - {fileID: 183520, guid: 54b058960f75ffa4791d25c3b1bc30ac, type: 2}
   - {fileID: 183520, guid: cbad25562384fd44b97f57bb6097f332, type: 2}
   velocityMult: 20
+  gameover: 0
   ball01: 1
   ball02: 0
   ball03: 0

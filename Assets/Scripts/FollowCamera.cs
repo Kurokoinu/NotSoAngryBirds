@@ -10,7 +10,9 @@ public class FollowCamera : MonoBehaviour {
 	public Vector2 minXY;
 
 	private float camZ;
-	
+
+
+	public bool isResting = false;
 
 
 
@@ -42,6 +44,7 @@ public class FollowCamera : MonoBehaviour {
 			
 			if(poi.tag == "projectile"){
 				if(poi.GetComponent<Rigidbody>().IsSleeping()){
+					isResting = true;
 					poi = null;
 					return;
 					
