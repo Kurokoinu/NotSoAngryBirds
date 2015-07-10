@@ -293,7 +293,7 @@ MonoBehaviour:
   castles:
   - {fileID: 146664, guid: 1a5c421800a6293418e9545d60d132c0, type: 2}
   - {fileID: 174006, guid: 68afa39583986644ab92556e63b5fd9b, type: 2}
-  - {fileID: 104318, guid: 5388222ec57c05f46af70fc6fe12255d, type: 2}
+  - {fileID: 122178, guid: 5388222ec57c05f46af70fc6fe12255d, type: 2}
   guiTextLvl: {fileID: 256241377}
   guiTextScore: {fileID: 351214530}
   castlePose: {x: 50, y: -4, z: 0}

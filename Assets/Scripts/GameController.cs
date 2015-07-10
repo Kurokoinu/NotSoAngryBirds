@@ -87,7 +87,7 @@ public class GameController : MonoBehaviour {
 	void UpdateGUI(){
 
 		guiTextLvl.text = "Level:" + (level+1) + "/" + levelMax;
-		guiTextScore.text = "Shots:" + shotsTaken;
+		guiTextScore.text = "Shots:" + shotsTaken + "/" + maxShots;
 
 	}
 
