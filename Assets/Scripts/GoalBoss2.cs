@@ -16,7 +16,7 @@ public class GoalBoss2 : MonoBehaviour {
 		if (other.gameObject.CompareTag("projectile")) {
 
 			//set static field to true
-			//goalMet = true;
+			goalMet = true;
 
 			//set the alpha of the color to a higher opacity
 			Color c = this.gameObject.GetComponent<Renderer>().material.color;

@@ -33,6 +33,7 @@ GameObject:
   - 95: {fileID: 9503316}
   - 54: {fileID: 5401836}
   - 65: {fileID: 6599210}
+  - 114: {fileID: 11400030}
   m_Layer: 0
   m_Name: Castlepart_Ice 1
   m_TagString: Untagged
@@ -53,6 +54,7 @@ GameObject:
   - 95: {fileID: 9563778}
   - 54: {fileID: 5456956}
   - 65: {fileID: 6510576}
+  - 114: {fileID: 11406620}
   m_Layer: 0
   m_Name: Castlepart_Ice 2
   m_TagString: Untagged
@@ -73,6 +75,7 @@ GameObject:
   - 95: {fileID: 9577700}
   - 54: {fileID: 5409066}
   - 65: {fileID: 6530510}
+  - 114: {fileID: 11454880}
   m_Layer: 0
   m_Name: Castlepart_Ice 6
   m_TagString: Untagged
@@ -93,6 +96,7 @@ GameObject:
   - 95: {fileID: 9548292}
   - 54: {fileID: 5447632}
   - 65: {fileID: 6552748}
+  - 114: {fileID: 11455338}
   m_Layer: 0
   m_Name: Castlepart_Ice 4
   m_TagString: Untagged
@@ -133,6 +137,7 @@ GameObject:
   - 95: {fileID: 9581420}
   - 54: {fileID: 5481806}
   - 65: {fileID: 6555606}
+  - 114: {fileID: 11433828}
   m_Layer: 0
   m_Name: Castlepart_Ice 5
   m_TagString: Untagged
@@ -168,6 +173,7 @@ GameObject:
   - 95: {fileID: 9563456}
   - 54: {fileID: 5427606}
   - 65: {fileID: 6561780}
+  - 114: {fileID: 11428962}
   m_Layer: 0
   m_Name: Castlepart_Ice 3
   m_TagString: Untagged
@@ -248,6 +254,7 @@ GameObject:
   - 95: {fileID: 9563714}
   - 54: {fileID: 5409224}
   - 65: {fileID: 6569280}
+  - 114: {fileID: 11472738}
   m_Layer: 0
   m_Name: Castlepart_Ice
   m_TagString: Untagged
@@ -1160,7 +1167,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 129780}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5.17377138, y: 7.20301008, z: 1.33485425}
@@ -1184,7 +1191,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 131600}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5.17377138, y: 7.20301008, z: 1.33485425}
@@ -1220,7 +1227,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137744}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5.17377138, y: 7.20301008, z: 1.33485425}
@@ -1232,7 +1239,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 157780}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5.17377138, y: 7.20301008, z: 1.33485425}
@@ -1244,7 +1251,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 180232}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5.17377138, y: 7.20301008, z: 1.33485425}
@@ -1268,7 +1275,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 185420}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5.17377138, y: 7.20301008, z: 1.33485425}
@@ -1280,7 +1287,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 122104}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5.17377138, y: 7.20301008, z: 1.33485425}
@@ -1506,6 +1513,54 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11400030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb335ed6651dd684c921fb7464b8d4cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Particle_Ice: {fileID: 115830, guid: ffe27cf89e247884bbe08bd8fca3303e, type: 2}
+--- !u!114 &11406620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb335ed6651dd684c921fb7464b8d4cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Particle_Ice: {fileID: 115830, guid: ffe27cf89e247884bbe08bd8fca3303e, type: 2}
+--- !u!114 &11428962
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb335ed6651dd684c921fb7464b8d4cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Particle_Ice: {fileID: 115830, guid: ffe27cf89e247884bbe08bd8fca3303e, type: 2}
+--- !u!114 &11433828
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb335ed6651dd684c921fb7464b8d4cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Particle_Ice: {fileID: 115830, guid: ffe27cf89e247884bbe08bd8fca3303e, type: 2}
 --- !u!114 &11444872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1517,6 +1572,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d561818d31ae9c41a9e6348e0c48e3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11454880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb335ed6651dd684c921fb7464b8d4cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Particle_Ice: {fileID: 115830, guid: ffe27cf89e247884bbe08bd8fca3303e, type: 2}
+--- !u!114 &11455338
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb335ed6651dd684c921fb7464b8d4cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Particle_Ice: {fileID: 115830, guid: ffe27cf89e247884bbe08bd8fca3303e, type: 2}
+--- !u!114 &11472738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb335ed6651dd684c921fb7464b8d4cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Particle_Ice: {fileID: 115830, guid: ffe27cf89e247884bbe08bd8fca3303e, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
