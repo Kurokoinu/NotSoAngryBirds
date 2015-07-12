@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: d94bf5994d52f4f41883dfcf96cfccde
-timeCreated: 1436523095
+guid: f59e33edb64776d4894175f10abcef6d
+timeCreated: 1436563605
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -53,13 +53,13 @@ TextureImporter:
     - name: UI_player_hover_0
       rect:
         serializedVersion: 2
-        x: 215
-        y: 120
-        width: 475
-        height: 450
+        x: 0
+        y: 0
+        width: 519
+        height: 467
       alignment: 0
       pivot: {x: .5, y: .5}
-      border: {x: 0, y: 1, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

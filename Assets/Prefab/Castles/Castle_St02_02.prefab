@@ -15,7 +15,7 @@ GameObject:
   - 65: {fileID: 6500590}
   m_Layer: 0
   m_Name: Castlepart_Metall 4
-  m_TagString: Untagged
+  m_TagString: castle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,7 +36,7 @@ GameObject:
   - 114: {fileID: 11400030}
   m_Layer: 0
   m_Name: Castlepart_Ice 1
-  m_TagString: Untagged
+  m_TagString: castle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,7 +57,7 @@ GameObject:
   - 114: {fileID: 11406620}
   m_Layer: 0
   m_Name: Castlepart_Ice 2
-  m_TagString: Untagged
+  m_TagString: castle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,7 +78,7 @@ GameObject:
   - 114: {fileID: 11454880}
   m_Layer: 0
   m_Name: Castlepart_Ice 6
-  m_TagString: Untagged
+  m_TagString: castle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,7 +99,7 @@ GameObject:
   - 114: {fileID: 11455338}
   m_Layer: 0
   m_Name: Castlepart_Ice 4
-  m_TagString: Untagged
+  m_TagString: castle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,7 +119,7 @@ GameObject:
   - 65: {fileID: 6509010}
   m_Layer: 0
   m_Name: Castlepart_Metall 1
-  m_TagString: Untagged
+  m_TagString: castle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,7 +140,7 @@ GameObject:
   - 114: {fileID: 11433828}
   m_Layer: 0
   m_Name: Castlepart_Ice 5
-  m_TagString: Untagged
+  m_TagString: castle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176,7 +176,7 @@ GameObject:
   - 114: {fileID: 11428962}
   m_Layer: 0
   m_Name: Castlepart_Ice 3
-  m_TagString: Untagged
+  m_TagString: castle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -196,7 +196,7 @@ GameObject:
   - 65: {fileID: 6539924}
   m_Layer: 0
   m_Name: Castlepart_Metall 2
-  m_TagString: Untagged
+  m_TagString: castle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -216,7 +216,7 @@ GameObject:
   - 65: {fileID: 6562438}
   m_Layer: 0
   m_Name: Castlepart_Metall 5
-  m_TagString: Untagged
+  m_TagString: castle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -236,7 +236,7 @@ GameObject:
   - 65: {fileID: 6525004}
   m_Layer: 0
   m_Name: Castlepart_Metall
-  m_TagString: Untagged
+  m_TagString: castle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -257,7 +257,7 @@ GameObject:
   - 114: {fileID: 11472738}
   m_Layer: 0
   m_Name: Castlepart_Ice
-  m_TagString: Untagged
+  m_TagString: castle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -277,7 +277,7 @@ GameObject:
   - 65: {fileID: 6505740}
   m_Layer: 0
   m_Name: Castlepart_Metall 3
-  m_TagString: Untagged
+  m_TagString: castle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

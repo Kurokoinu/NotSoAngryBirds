@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: c44fc361321c6404f94d740b22479faf
-timeCreated: 1436523626
+guid: 84352c2d227a9694b93be2cdc1f4b2bb
+timeCreated: 1436563712
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -53,10 +53,10 @@ TextureImporter:
     - name: UI_target_hover_0
       rect:
         serializedVersion: 2
-        x: 215
-        y: 116
-        width: 475
-        height: 454
+        x: 0
+        y: 0
+        width: 519
+        height: 467
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

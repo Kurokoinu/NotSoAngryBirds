@@ -3,17 +3,12 @@ using System.Collections;
 
 public class MetalCollide : MonoBehaviour {
 
-		public AudioClip impact;
-		AudioSource audio;
+	public GameObject Particle_colider;
+
+	void OnCollisionEnter(Collider other) {
 		
-		void Start() {
-			audio = GetComponent<AudioSource>();
-		}
-		
-	void OnCollisionEnter() {
-	//	if(other.gameObject.CompareTag("projectile")){
-			audio.PlayOneShot(impact, 0.7F);
-	//	}
-		}
+		Instantiate(Particle_colider, this.transform.position, this.transform.rotation);		
+
 	}
+}
 

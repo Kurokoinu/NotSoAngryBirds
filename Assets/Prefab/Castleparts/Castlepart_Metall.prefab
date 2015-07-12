@@ -13,9 +13,10 @@ GameObject:
   - 95: {fileID: 9595884}
   - 54: {fileID: 5482998}
   - 65: {fileID: 6596590}
+  - 114: {fileID: 11457814}
   m_Layer: 0
   m_Name: Castlepart_Metall
-  m_TagString: Untagged
+  m_TagString: castle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,6 +108,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11457814
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 119264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1829968fd35d1ba44b7a5aff18799ef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Particle_colider: {fileID: 185562, guid: a70cf4d68f0008c45bb57d8b9f4ed663, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

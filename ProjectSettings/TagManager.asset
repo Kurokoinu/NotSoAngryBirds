@@ -6,6 +6,9 @@ TagManager:
   tags:
   - GameController
   - projectile
+  - floor
+  - bot
+  - castle
   layers:
   - Default
   - TransparentFX

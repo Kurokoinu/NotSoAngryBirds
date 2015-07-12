@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: a164e7bb7a5933d4495d8d913545527b
-timeCreated: 1436523167
+guid: d459856db84f20a44b69fa006e28f0d9
+timeCreated: 1436563708
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -53,10 +53,10 @@ TextureImporter:
     - name: UI_camera_hover_0
       rect:
         serializedVersion: 2
-        x: 215
-        y: 120
-        width: 475
-        height: 450
+        x: 0
+        y: 0
+        width: 519
+        height: 467
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

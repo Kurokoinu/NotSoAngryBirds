@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 012c8c6a463c3ed4d9053f397900c7a1
-timeCreated: 1436523099
+guid: 17b60fe5b9219d84d8b247b68ef24760
+timeCreated: 1436562772
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -53,10 +53,10 @@ TextureImporter:
     - name: UI_player_0
       rect:
         serializedVersion: 2
-        x: 215
-        y: 120
-        width: 475
-        height: 450
+        x: 0
+        y: 0
+        width: 519
+        height: 467
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

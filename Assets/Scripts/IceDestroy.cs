@@ -10,5 +10,6 @@ public class IceDestroy : MonoBehaviour {
 
 		Instantiate(Particle_Ice, this.transform.position, this.transform.rotation);		
 		Destroy(this.gameObject);
+		
 	}
 }
