@@ -11,9 +11,10 @@ GameObject:
   - 212: {fileID: 21298974}
   - 54: {fileID: 5429832}
   - 135: {fileID: 13557184}
+  - 114: {fileID: 11471652}
   m_Layer: 0
   m_Name: b_bomb
-  m_TagString: projectile
+  m_TagString: bomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,6 +46,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &11471652
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d24e7138e5d6e744a5dcf02a7f30502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Particle_Bomb: {fileID: 185562, guid: 26d04cc7044502240be16788948da2df, type: 2}
 --- !u!135 &13557184
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -52,7 +65,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 148862}
   m_Material: {fileID: 13400000, guid: cd526412c22d28542b77060d3005c7b9, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1.13999999

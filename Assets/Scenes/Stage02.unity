@@ -2343,7 +2343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabProjectile:
-  - {fileID: 183520, guid: 54b058960f75ffa4791d25c3b1bc30ac, type: 2}
+  - {fileID: 148862, guid: a2d55cee3778b7649ba92d2939381917, type: 2}
   - {fileID: 148862, guid: abb238597c2aa104090bee4945883352, type: 2}
   velocityMult: 20
   gameover: 0

@@ -9,6 +9,7 @@ TagManager:
   - floor
   - bot
   - castle
+  - bomb
   layers:
   - Default
   - TransparentFX

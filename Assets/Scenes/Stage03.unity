@@ -343,10 +343,10 @@ MonoBehaviour:
   guiTextLvl: {fileID: 256241377}
   guiTextScore: {fileID: 351214530}
   castlePose: {x: 60, y: -10, z: 50}
-  sling: {fileID: 0}
-  slingscript: {fileID: 0}
-  FollowCam: {fileID: 0}
-  follocam: {fileID: 0}
+  sling: {fileID: 1591336286}
+  slingscript: {fileID: 1591336288}
+  FollowCam: {fileID: 749644472}
+  follocam: {fileID: 749644478}
 --- !u!224 &188390317
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2012,7 +2012,7 @@ GameObject:
   - 23: {fileID: 1449455539}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2417,8 +2417,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabProjectile:
-  - {fileID: 183520, guid: 54b058960f75ffa4791d25c3b1bc30ac, type: 2}
-  - {fileID: 183520, guid: cbad25562384fd44b97f57bb6097f332, type: 2}
+  - {fileID: 148862, guid: a2d55cee3778b7649ba92d2939381917, type: 2}
+  - {fileID: 148862, guid: abb238597c2aa104090bee4945883352, type: 2}
+  - {fileID: 148862, guid: b071dcf95e38e1548b115189c155a937, type: 2}
   velocityMult: 20
   gameover: 0
   ball01: 1
