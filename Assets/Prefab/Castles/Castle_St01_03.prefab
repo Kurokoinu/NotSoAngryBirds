@@ -1238,7 +1238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc576460d5aa3b642b8d6b75d85e9be6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Particle_Bomb: {fileID: 0}
+  Particle_Bomb: {fileID: 185562, guid: 26d04cc7044502240be16788948da2df, type: 2}
 --- !u!114 &11448276
 MonoBehaviour:
   m_ObjectHideFlags: 1
