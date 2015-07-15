@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 34ece09f60002b545b4ae8352cbf3f11
-timeCreated: 1436202110
+guid: 4a6d7cbc313e5d848bf55b0c3bc10006
+timeCreated: 1436971299
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: hg2-trees_0
+    21300000: st02background03b_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -50,13 +50,13 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: hg2-trees_0
+    - name: st02background03b_0
       rect:
         serializedVersion: 2
-        x: 83
-        y: 129
-        width: 1808
-        height: 504
+        x: 0
+        y: 0
+        width: 2000
+        height: 1759
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

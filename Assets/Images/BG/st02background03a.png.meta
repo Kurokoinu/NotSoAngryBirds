@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ba3a72bc74daeb746afa3cb717b02f96
-timeCreated: 1436525605
+guid: 9a7ff987c2cdae7438d4da4ef873a531
+timeCreated: 1436971293
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: st01background02_0
+    21300000: st02background03a_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -50,13 +50,13 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: st01background02_0
+    - name: st02background03a_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 2000
-        height: 1000
+        height: 1759
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

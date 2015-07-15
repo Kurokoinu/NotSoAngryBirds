@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1d03c218f0bcc4946b74508fbda6da78
-timeCreated: 1436202118
+guid: 0a270339b3530e44298b3e604edc0ea4
+timeCreated: 1436971166
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: hg3-mountains_0
+    21300000: smoke02_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -50,13 +50,13 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: hg3-mountains_0
+    - name: smoke02_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 36
         y: 0
-        width: 2000
-        height: 800
+        width: 622
+        height: 425
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

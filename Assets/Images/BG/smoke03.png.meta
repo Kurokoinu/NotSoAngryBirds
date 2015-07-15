@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 73d3f7450ede9814d897d00b5bd51d2a
-timeCreated: 1436525618
+guid: f81696c83af58044ba09d1c342eebefe
+timeCreated: 1436971169
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: st01background03_0
+    21300000: smoke03_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -50,13 +50,13 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: st01background03_0
+    - name: smoke03_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 77
         y: 0
-        width: 2000
-        height: 1000
+        width: 541
+        height: 443
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
