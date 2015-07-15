@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour {
 	public GameObject[] castles;
 	public Text guiTextLvl;
 	public Text guiTextScore;
+	public Text NPC;
 
 	public Vector3 castlePose;
 
@@ -89,6 +90,97 @@ public class GameController : MonoBehaviour {
 		guiTextLvl.text = "Level:" + (level+1) + "/" + levelMax;
 		guiTextScore.text = "Shots:" + shotsTaken + "/" + maxShots;
 
+
+		if(Application.loadedLevelName == "Stage01")
+		{		
+			if (level == 0)
+			{
+				if(shotsTaken == 1)
+				{
+					NPC.text = "Good.";
+				}
+
+			}
+
+			if (level == 1)
+			{
+				if(shotsTaken == 0)
+				{
+					NPC.text = "Keep going.";
+				}
+				
+			}
+
+			if (level == 2)
+			{
+				if(shotsTaken == 0)
+				{
+					NPC.text = "You see the metal things? Metal = not moving, got it?.";
+				}
+				
+			}
+		}
+
+		if (Application.loadedLevelName == "Stage02"){
+
+			if(level == 0){
+				if(shotsTaken == 1)
+				{
+					NPC.text = "Be careful, the floor is slippery. Maybe.";
+				}
+			}
+
+			if(level == 1){
+				if(shotsTaken == 2)
+				{
+					NPC.text = "...I made this one on my first try- I mean...don't give up.";
+				}
+
+				if(shotsTaken == 4)
+				{
+					NPC.text = "...";
+				}
+
+				if(shotsTaken == 9)
+				{
+					NPC.text = "...last chance";
+				}
+			}
+
+			if(level == 2){
+				if(shotsTaken == 0)
+				{
+					NPC.text = "This should be pretty easy. Anyways, next Stage is last Stage.";
+				}
+
+			}
+		}
+
+		
+		if (Application.loadedLevelName == "Stage03"){
+			
+			if(level == 0){
+				if(shotsTaken == 2)
+				{
+					NPC.text = "Be sure not to use the bomb to hit the TV. They won't do anything, not even to the big on";
+				}
+			}
+
+			if(level == 1){
+				if(shotsTaken == 0)
+				{
+					NPC.text = "More.................TVs.";
+				}
+			}
+
+			if(level == 2){
+				if(shotsTaken == 0)
+				{
+					NPC.text = "That's the main TV! Destory it.";
+				}
+			}
+
+		}
 	}
 
 
@@ -162,7 +254,7 @@ public class GameController : MonoBehaviour {
 
 		
 		if (level == 0){
-			maxShots = 10;
+			maxShots = 5;
 			
 		}
 		

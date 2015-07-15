@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Goal : MonoBehaviour {
+public class GoalBoss3 : MonoBehaviour {
+	
 
-	//static field accesable from anywhere
+//static field accesable from anywhere
 
 	//storing if the goal was met
 
@@ -23,6 +24,8 @@ public class Goal : MonoBehaviour {
 			c.a = 1.0f;
 
 			this.gameObject.GetComponent<Renderer>().material.color = c;
+
+			Application.LoadLevel("Win");
 
 
 		}

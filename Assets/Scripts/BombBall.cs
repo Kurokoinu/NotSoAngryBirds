@@ -10,7 +10,10 @@ public class BombBall : MonoBehaviour {
 		
 		if(other.tag == "castle" || other.tag == "floor"){
 			Instantiate(Particle_Bomb, this.transform.position, this.transform.rotation);
-			Destroy(GameObject.FindGameObjectWithTag("castle"));
+			//Destroy(GameObject.FindGameObjectWithTag("castle"));
+			if(other.tag == "castle"){
+				Destroy (other.gameObject);
+			}
 			Destroy(this.gameObject);
 		}
 	}

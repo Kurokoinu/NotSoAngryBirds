@@ -10,6 +10,8 @@ GameObject:
   - 4: {fileID: 499546}
   - 212: {fileID: 21257726}
   - 95: {fileID: 9506158}
+  - 114: {fileID: 11494568}
+  - 65: {fileID: 6592564}
   m_Layer: 0
   m_Name: bot01_0
   m_TagString: Untagged
@@ -29,6 +31,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!65 &6592564
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 168246}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.81999993, y: 2.96000004, z: 10.3599997}
+  m_Center: {x: -.0299999993, y: -.300000012, z: 0}
 --- !u!95 &9506158
 Animator:
   serializedVersion: 3
@@ -46,6 +60,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11494568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 168246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e6a64394308e1e4c895ee42eb58b1a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Particle_Bomb: {fileID: 185562, guid: 26d04cc7044502240be16788948da2df, type: 2}
 --- !u!212 &21257726
 SpriteRenderer:
   m_ObjectHideFlags: 1
