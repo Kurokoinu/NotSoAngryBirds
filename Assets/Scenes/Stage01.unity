@@ -374,7 +374,7 @@ MonoBehaviour:
   castles:
   - {fileID: 185994, guid: c599ed20696716a4da53aa244f76b352, type: 2}
   - {fileID: 173828, guid: ae384b0d6b4d03e4fb942fc45447fb4a, type: 2}
-  - {fileID: 117604, guid: a7bf3d318547e0042904d1311591a462, type: 2}
+  - {fileID: 105440, guid: a7bf3d318547e0042904d1311591a462, type: 2}
   guiTextLvl: {fileID: 256241377}
   guiTextScore: {fileID: 351214530}
   NPC: {fileID: 645210162}

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GoalBoss : MonoBehaviour {
+public class GoalBoss1 : MonoBehaviour {
 	
 
 //static field accesable from anywhere
@@ -25,7 +25,7 @@ public class GoalBoss : MonoBehaviour {
 
 			this.gameObject.GetComponent<Renderer>().material.color = c;
 
-			Application.LoadLevel("Stage02");
+			Application.LoadLevel("Win 2");
 
 
 		}
