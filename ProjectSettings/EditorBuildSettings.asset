@@ -25,3 +25,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Win 1.unity
   - enabled: 1
     path: Assets/Scenes/Win 2.unity
+  - enabled: 1
+    path: Assets/Scenes/Multiplayer.unity
