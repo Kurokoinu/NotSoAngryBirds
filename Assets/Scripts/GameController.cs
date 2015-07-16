@@ -38,8 +38,8 @@ public class GameController : MonoBehaviour {
 	public FollowCamera follocam;
 
 
-	void Start() {
 
+	void Start() {
 
 		s = this;
 
@@ -106,7 +106,12 @@ public class GameController : MonoBehaviour {
 			{
 				if(shotsTaken == 0)
 				{
-					NPC.text = "Keep going.";
+					NPC.text = "These things are bouncy.";
+				}
+
+				if(shotsTaken == 1)
+				{
+					NPC.text = "Great. (눈_눈)";
 				}
 				
 			}
@@ -170,6 +175,22 @@ public class GameController : MonoBehaviour {
 				if(shotsTaken == 0)
 				{
 					NPC.text = "More.................TVs.";
+				}
+
+				if(shotsTaken == 2)
+				{
+					NPC.text = "Have you heard about the midnight channel?";
+				}
+
+				if(shotsTaken == 3)
+				{
+					NPC.text = "I guess not.";
+				}
+
+				
+				if(shotsTaken == 4)
+				{
+					NPC.text = "This ones difficult, but not impossible.";
 				}
 			}
 

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class SlingshotP1 : MonoBehaviour {
 
@@ -25,6 +26,18 @@ public class SlingshotP1 : MonoBehaviour {
 
 	public bool player1 = true;
 	public SlingshotP2 slingscript;
+
+	public Text turn;
+
+	void UpdateGUI(){
+		if(player1 == true){
+			turn.text = "Player 1's turn!";
+		}
+
+		if(slingscript.player2 == true){
+			turn.text = "Player 2's turn!";
+		}
+	}
 	
 	
 	void Awake() {
@@ -94,6 +107,8 @@ public class SlingshotP1 : MonoBehaviour {
 	}
 	
 	void Update(){
+
+		UpdateGUI();
 
 		Debug.Log(gameover + "gameover");
 		//check aiming mode
