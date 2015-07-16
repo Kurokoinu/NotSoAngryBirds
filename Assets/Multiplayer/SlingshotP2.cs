@@ -24,6 +24,7 @@ public class SlingshotP2 : MonoBehaviour {
 	public bool ball03 = false;
 
 	public bool player2;
+	public SlingshotP1 slingscript;
 	
 	
 	void Awake() {
@@ -84,7 +85,8 @@ public class SlingshotP2 : MonoBehaviour {
 			//disable physics
 			projectile.GetComponent<Rigidbody>().isKinematic = true;
 		}
-
+			player2 = false;
+			slingscript.player1 = true;
 
 		}
 	}
