@@ -1519,8 +1519,8 @@ GameObject:
   - 92: {fileID: 749644475}
   - 124: {fileID: 749644474}
   - 81: {fileID: 749644473}
-  - 114: {fileID: 749644478}
   - 114: {fileID: 749644479}
+  - 114: {fileID: 749644478}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1605,7 +1605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poi: {fileID: 0}
-  easing: .0500000007
+  easing: .0299999993
   minXY: {x: 0, y: 0}
   isResting: 0
 --- !u!114 &749644479
@@ -1659,9 +1659,9 @@ MonoBehaviour:
   - {fileID: 199050, guid: c73d08772766afc4d93952c117b658ce, type: 2}
   castlePose: {x: 44, y: -4, z: 0}
   sling: {fileID: 344150916}
-  slingscript: {fileID: 0}
+  slingscript: {fileID: 344150918}
   FollowCam: {fileID: 749644472}
-  follocam: {fileID: 749644478}
+  follocam: {fileID: 0}
 --- !u!224 &801244312
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1977,7 +1977,7 @@ RectTransform:
   m_GameObject: {fileID: 903930359}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .75014472, y: .866547227, z: 1}
+  m_LocalScale: {x: .75014472, y: .952493012, z: 1}
   m_Children:
   - {fileID: 1555319542}
   m_Father: {fileID: 1833742555}
@@ -2013,9 +2013,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: .100000001
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 84352c2d227a9694b93be2cdc1f4b2bb,
+    m_HighlightedSprite: {fileID: 21300000, guid: f59e33edb64776d4894175f10abcef6d,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: db7e82b6489419f47a9f63926b7f4daa, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 17b60fe5b9219d84d8b247b68ef24760, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -2054,7 +2054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: db7e82b6489419f47a9f63926b7f4daa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 17b60fe5b9219d84d8b247b68ef24760, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

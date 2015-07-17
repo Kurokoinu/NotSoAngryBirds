@@ -28,7 +28,7 @@ public class GameController_Multiplayer : MonoBehaviour {
 	private int maxShots;
 
 	public GameObject sling;
-	public Slingshot slingscript;
+	public SlingshotP1 slingscript;
 
 	public GameObject FollowCam;
 	public FollowCamera follocam;
